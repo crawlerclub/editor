@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "format": "grid",
+  "properties": {
+    "key": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "dom",
+        "url",
+        "text",
+        "html",
+        "attr"
+      ]
+    },
+    "xpath": {
+      "options": { "grid_columns": 12 },
+      "type": "string"
+    },
+    "re": {
+      "options": { "grid_columns": 12 },
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+          "type": "string"
+      }
+    },
+    "js": {
+      "options": { "grid_columns": 12 },
+      "type": "string",
+      "format": "javascript"
+    }
+  }
+}
